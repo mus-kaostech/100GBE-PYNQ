@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Oct 28 13:31:41 2024
+# Process ID: 43380
+# Current directory: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/qsfp2_vio_0_0_synth_1
+# Command line: vivado.exe -log qsfp2_vio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source qsfp2_vio_0_0.tcl
+# Log file: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/qsfp2_vio_0_0_synth_1/qsfp2_vio_0_0.vds
+# Journal file: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/qsfp2_vio_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-AP6UC59, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 16, Host memory: 68388 MB
+#-----------------------------------------------------------
+source qsfp2_vio_0_0.tcl -notrace

@@ -46,7 +46,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
    create_project project_1 myproj -part xczu28dr-ffvg1517-2-e
-   set_property BOARD_PART xilinx.com:zcu111:part0:1.2 [current_project]
+   set_property BOARD_PART xilinx.com:zcu111:part0:1.4 [current_project]
 }
 
 

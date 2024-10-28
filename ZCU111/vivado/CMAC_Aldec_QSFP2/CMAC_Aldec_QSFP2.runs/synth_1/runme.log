@@ -1,0 +1,655 @@
+
+*** Running vivado
+    with args -log qsfp2_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source qsfp2_wrapper.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source qsfp2_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1467.883 ; gain = 161.070
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1645.148 ; gain = 177.266
+Command: synth_design -top qsfp2_wrapper -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3116.379 ; gain = 366.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_wrapper' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:416]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_dma_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_dma_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'qsfp2_axi_dma_0_0' has 64 connections declared, but only 61 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_intc_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_intc_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_smc_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_smc_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_cmac_usplus_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_cmac_usplus_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gt_rxrecclkout' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'gt_powergoodout' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'gt_ref_clk_out' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_bip8_0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_bip8_1' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_bip8_2' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_bip8_3' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_bip8_4' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_data_0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_data_1' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_data_2' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_data_3' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_data_4' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_ena' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_lane0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_otn_vlmarker' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'rx_preambleout' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_aligned_err' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bad_code' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bad_fcs' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bad_preamble' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bad_sfd' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_1' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_10' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_11' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_12' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_13' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_14' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_15' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_16' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_17' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_18' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_19' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_2' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_3' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_4' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_5' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_6' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_7' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_8' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_bip_err_9' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_block_lock' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_broadcast' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_fragment' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_1' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_10' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_11' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_12' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_13' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_14' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_15' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_16' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_17' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_18' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_19' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_2' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_3' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_4' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_5' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_6' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_7' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_8' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_9' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_0' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_1' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_10' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_11' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_12' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_13' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_14' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_15' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_16' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_17' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_18' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_19' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_2' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_3' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_4' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_5' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_6' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_7' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_8' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_framing_err_valid_9' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_got_signal_os' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_hi_ber' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_inrangeerr' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_internal_local_fault' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_jabber' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_local_fault' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_mf_err' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_mf_len_err' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_mf_repeat_err' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_misaligned' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_multicast' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+WARNING: [Synth 8-7071] port 'stat_rx_oversize' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'cmac_usplus_0' of module 'qsfp2_cmac_usplus_0_0' has 239 connections declared, but only 59 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_ps8_0_axi_periph_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1255]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_19WEQNP' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_19WEQNP' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_7XK9EL' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_7XK9EL' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:138]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_3V1W4K' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_3V1W4K' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:284]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1VG75I6' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2167]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1VG75I6' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2167]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KS1WTY' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2577]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_1' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_1' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_1' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_1' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KS1WTY' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2577]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xbar_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2128]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_ps8_0_axi_periph_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1255]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_rst_ps8_0_99M_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rst_ps8_0_99M_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'qsfp2_rst_ps8_0_99M_0' has 10 connections declared, but only 7 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1037]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_rx_fifo_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rx_fifo_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rx_fifo' of module 'qsfp2_rx_fifo_0' has 15 connections declared, but only 13 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1045]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1059]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1067]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_tx_fifo_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_tx_fifo_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_util_vector_logic1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_util_vector_logic1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1114]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1117]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1120]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconcat_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconcat_0_0/synth/qsfp2_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconcat_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconcat_0_0/synth/qsfp2_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconstant_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_0_0/synth/qsfp2_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconstant_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_0_0/synth/qsfp2_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconstant_1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_1_0/synth/qsfp2_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconstant_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_1_0/synth/qsfp2_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconstant_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_2_0/synth/qsfp2_xlconstant_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconstant_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_2_0/synth/qsfp2_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'qsfp2_zynq_ultra_ps_e_0_0' has 125 connections declared, but only 118 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:416]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_wrapper' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cmac_usplus_0'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1114]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_ps8_0_99M'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1037]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_1'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1117]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'qsfp2_i'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:49]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_2'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1120]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3208.859 ; gain = 458.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3226.777 ; gain = 476.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3226.777 ; gain = 476.609
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 3226.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_dma_0_0/qsfp2_axi_dma_0_0/qsfp2_axi_dma_0_0_in_context.xdc] for cell 'qsfp2_i/axi_dma_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_dma_0_0/qsfp2_axi_dma_0_0/qsfp2_axi_dma_0_0_in_context.xdc] for cell 'qsfp2_i/axi_dma_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_intc_0_0/qsfp2_axi_intc_0_0/qsfp2_axi_intc_0_0_in_context.xdc] for cell 'qsfp2_i/axi_intc_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_intc_0_0/qsfp2_axi_intc_0_0/qsfp2_axi_intc_0_0_in_context.xdc] for cell 'qsfp2_i/axi_intc_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_smc_0/qsfp2_axi_smc_0/qsfp2_axi_smc_0_in_context.xdc] for cell 'qsfp2_i/axi_smc'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_axi_smc_0/qsfp2_axi_smc_0/qsfp2_axi_smc_0_in_context.xdc] for cell 'qsfp2_i/axi_smc'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc] for cell 'qsfp2_i/cmac_usplus_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc] for cell 'qsfp2_i/cmac_usplus_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xbar_0/qsfp2_xbar_0/qsfp2_xbar_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xbar_0/qsfp2_xbar_0/qsfp2_xbar_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_ds_0/qsfp2_auto_ds_0/qsfp2_auto_ds_1_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_ds_0/qsfp2_auto_ds_0/qsfp2_auto_ds_1_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_pc_0/qsfp2_auto_pc_0/qsfp2_auto_pc_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_pc_0/qsfp2_auto_pc_0/qsfp2_auto_pc_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_ds_1/qsfp2_auto_ds_1/qsfp2_auto_ds_1_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_ds_1/qsfp2_auto_ds_1/qsfp2_auto_ds_1_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_pc_1/qsfp2_auto_pc_1/qsfp2_auto_pc_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_auto_pc_1/qsfp2_auto_pc_1/qsfp2_auto_pc_0_in_context.xdc] for cell 'qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_rst_ps8_0_99M_0/qsfp2_rst_ps8_0_99M_0/qsfp2_rst_ps8_0_99M_0_in_context.xdc] for cell 'qsfp2_i/rst_ps8_0_99M'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_rst_ps8_0_99M_0/qsfp2_rst_ps8_0_99M_0/qsfp2_rst_ps8_0_99M_0_in_context.xdc] for cell 'qsfp2_i/rst_ps8_0_99M'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_rx_fifo_0/qsfp2_rx_fifo_0/qsfp2_rx_fifo_0_in_context.xdc] for cell 'qsfp2_i/rx_fifo'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_rx_fifo_0/qsfp2_rx_fifo_0/qsfp2_rx_fifo_0_in_context.xdc] for cell 'qsfp2_i/rx_fifo'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_0_0/qsfp2_system_ila_0_0/qsfp2_system_ila_0_0_in_context.xdc] for cell 'qsfp2_i/system_ila_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_0_0/qsfp2_system_ila_0_0/qsfp2_system_ila_0_0_in_context.xdc] for cell 'qsfp2_i/system_ila_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_1_0/qsfp2_system_ila_1_0/qsfp2_system_ila_1_0_in_context.xdc] for cell 'qsfp2_i/system_ila_1'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_1_0/qsfp2_system_ila_1_0/qsfp2_system_ila_1_0_in_context.xdc] for cell 'qsfp2_i/system_ila_1'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_2_0/qsfp2_system_ila_2_0/qsfp2_system_ila_2_0_in_context.xdc] for cell 'qsfp2_i/system_ila_2'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_2_0/qsfp2_system_ila_2_0/qsfp2_system_ila_2_0_in_context.xdc] for cell 'qsfp2_i/system_ila_2'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_tx_fifo_0/qsfp2_tx_fifo_0/qsfp2_tx_fifo_0_in_context.xdc] for cell 'qsfp2_i/tx_fifo'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_tx_fifo_0/qsfp2_tx_fifo_0/qsfp2_tx_fifo_0_in_context.xdc] for cell 'qsfp2_i/tx_fifo'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_util_vector_logic1_0/qsfp2_util_vector_logic1_0/qsfp2_util_vector_logic1_0_in_context.xdc] for cell 'qsfp2_i/util_vector_logic1'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_util_vector_logic1_0/qsfp2_util_vector_logic1_0/qsfp2_util_vector_logic1_0_in_context.xdc] for cell 'qsfp2_i/util_vector_logic1'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_0_0/qsfp2_vio_0_0/qsfp2_vio_0_0_in_context.xdc] for cell 'qsfp2_i/vio_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_0_0/qsfp2_vio_0_0/qsfp2_vio_0_0_in_context.xdc] for cell 'qsfp2_i/vio_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_1_0/qsfp2_vio_1_0/qsfp2_vio_1_0_in_context.xdc] for cell 'qsfp2_i/vio_1'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_1_0/qsfp2_vio_1_0/qsfp2_vio_1_0_in_context.xdc] for cell 'qsfp2_i/vio_1'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_2_0/qsfp2_vio_2_0/qsfp2_vio_2_0_in_context.xdc] for cell 'qsfp2_i/vio_2'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_2_0/qsfp2_vio_2_0/qsfp2_vio_2_0_in_context.xdc] for cell 'qsfp2_i/vio_2'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'qsfp2_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'qsfp2_i/zynq_ultra_ps_e_0'
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:17]
+WARNING: [Vivado 12-507] No nets matched '*qsfp1_intl_1*'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:18]
+WARNING: [Vivado 12-507] No nets matched '*qsp1_modprsl_1*'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:19]
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/qsfp2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3268.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3268.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_clk_n. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_clk_n. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_clk_p. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_clk_p. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_n[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_n[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_n[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_n[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_n[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_n[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_n[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_n[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_p[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_p[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_p[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_p[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_p[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_p[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_grx_p[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_grx_p[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_n[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_n[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_n[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_n[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_n[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_n[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_n[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_n[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_p[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_p[0]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_p[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_p[1]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_p[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_p[2]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rtl_gtx_p[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rtl_gtx_p[3]. (constraint file  e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0/qsfp2_cmac_usplus_0_0_in_context.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/axi_intc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/cmac_usplus_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/rx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/system_ila_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/system_ila_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/tx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/util_vector_logic1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/vio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/vio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3268.113 ; gain = 517.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3656.785 ; gain = 906.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3658.598 ; gain = 908.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3670.395 ; gain = 920.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |qsfp2_xbar_0               |         1|
+|2     |qsfp2_auto_ds_0            |         1|
+|3     |qsfp2_auto_pc_0            |         1|
+|4     |qsfp2_auto_ds_1            |         1|
+|5     |qsfp2_auto_pc_1            |         1|
+|6     |qsfp2_axi_dma_0_0          |         1|
+|7     |qsfp2_axi_intc_0_0         |         1|
+|8     |qsfp2_axi_smc_0            |         1|
+|9     |qsfp2_cmac_usplus_0_0      |         1|
+|10    |qsfp2_rst_ps8_0_99M_0      |         1|
+|11    |qsfp2_rx_fifo_0            |         1|
+|12    |qsfp2_system_ila_0_0       |         1|
+|13    |qsfp2_system_ila_1_0       |         1|
+|14    |qsfp2_system_ila_2_0       |         1|
+|15    |qsfp2_tx_fifo_0            |         1|
+|16    |qsfp2_util_vector_logic1_0 |         1|
+|17    |qsfp2_vio_0_0              |         1|
+|18    |qsfp2_vio_1_0              |         1|
+|19    |qsfp2_vio_2_0              |         1|
+|20    |qsfp2_zynq_ultra_ps_e_0_0  |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |qsfp2_auto_ds            |     2|
+|3     |qsfp2_auto_pc            |     2|
+|5     |qsfp2_axi_dma_0          |     1|
+|6     |qsfp2_axi_intc_0         |     1|
+|7     |qsfp2_axi_smc            |     1|
+|8     |qsfp2_cmac_usplus_0      |     1|
+|9     |qsfp2_rst_ps8_0_99M      |     1|
+|10    |qsfp2_rx_fifo            |     1|
+|11    |qsfp2_system_ila_0       |     1|
+|12    |qsfp2_system_ila_1       |     1|
+|13    |qsfp2_system_ila_2       |     1|
+|14    |qsfp2_tx_fifo            |     1|
+|15    |qsfp2_util_vector_logic1 |     1|
+|16    |qsfp2_vio_0              |     1|
+|17    |qsfp2_vio_1              |     1|
+|18    |qsfp2_vio_2              |     1|
+|19    |qsfp2_xbar               |     1|
+|20    |qsfp2_zynq_ultra_ps_e_0  |     1|
+|21    |IBUF                     |     2|
+|22    |OBUF                     |     3|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3684.195 ; gain = 892.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3684.195 ; gain = 934.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 3696.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3748.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+Synth Design complete | Checksum: 31b3d9de
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 3748.754 ; gain = 2103.605
+INFO: [Common 17-1381] The checkpoint 'e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/qsfp2_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file qsfp2_wrapper_utilization_synth.rpt -pb qsfp2_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 13:38:40 2024...

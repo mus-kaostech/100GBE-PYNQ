@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCAA0DD519FFD0D80",
+      "boundary_crc": "0xCAA0DD514237279D",
       "device": "xczu28dr-ffvg1517-2-e",
       "gen_directory": "../../../../CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2",
       "name": "qsfp2",

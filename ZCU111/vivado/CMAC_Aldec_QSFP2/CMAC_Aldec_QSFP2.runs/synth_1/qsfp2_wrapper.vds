@@ -3,45 +3,50 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Oct 28 13:37:40 2024
-# Process ID: 32028
-# Current directory: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1
+# Start of session at: Mon Oct 28 15:30:51 2024
+# Process ID: 22560
+# Current directory: E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1
 # Command line: vivado.exe -log qsfp2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source qsfp2_wrapper.tcl
-# Log file: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/qsfp2_wrapper.vds
-# Journal file: e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1\vivado.jou
+# Log file: E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/qsfp2_wrapper.vds
+# Journal file: E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1\vivado.jou
 # Running On: DESKTOP-AP6UC59, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 16, Host memory: 68388 MB
 #-----------------------------------------------------------
 source qsfp2_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1467.883 ; gain = 161.070
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1467.957 ; gain = 161.125
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1645.148 ; gain = 177.266
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1647.301 ; gain = 179.082
+Command: read_checkpoint -auto_incremental -incremental E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.srcs/utils_1/imports/synth_1/qsfp2_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.srcs/utils_1/imports/synth_1/qsfp2_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top qsfp2_wrapper -part xczu28dr-ffvg1517-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4316
+INFO: [Synth 8-7075] Helper process launched with PID 24812
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3116.379 ; gain = 366.211
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3118.723 ; gain = 365.062
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_wrapper' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_wrapper' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'qsfp2' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:416]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_dma_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_dma_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_dma_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_dma_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'qsfp2_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'qsfp2_axi_dma_0_0' has 64 connections declared, but only 61 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:685]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_intc_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_intc_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_smc_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_smc_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_cmac_usplus_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_cmac_usplus_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_intc_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_intc_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_axi_smc_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_axi_smc_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_cmac_usplus_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_cmac_usplus_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_cmac_usplus_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'gt_rxrecclkout' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
 WARNING: [Synth 8-7071] port 'gt_powergoodout' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
 WARNING: [Synth 8-7071] port 'gt_ref_clk_out' of module 'qsfp2_cmac_usplus_0_0' is unconnected for instance 'cmac_usplus_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
@@ -149,50 +154,50 @@ INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_7XK9EL' (0#1) [e
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_3V1W4K' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:284]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_3V1W4K' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:284]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1VG75I6' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2167]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1VG75I6' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2167]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KS1WTY' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2577]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_1' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_1' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_1' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_1' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_ds_1' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_ds_1' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_auto_pc_1' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_auto_pc_1' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KS1WTY' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2577]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xbar_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_xbar_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xbar_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2128]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'qsfp2_xbar_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:2132]
 INFO: [Synth 8-6155] done synthesizing module 'qsfp2_ps8_0_axi_periph_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1255]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_rst_ps8_0_99M_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rst_ps8_0_99M_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_rst_ps8_0_99M_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rst_ps8_0_99M_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_rst_ps8_0_99M_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'qsfp2_rst_ps8_0_99M_0' has 10 connections declared, but only 7 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1037]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_rx_fifo_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rx_fifo_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_rx_fifo_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_rx_fifo_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_rx_fifo_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rx_fifo' of module 'qsfp2_rx_fifo_0' has 15 connections declared, but only 13 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1045]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1059]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_0_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1067]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_1_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_1_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_1_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1075]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_tx_fifo_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_tx_fifo_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_util_vector_logic1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_util_vector_logic1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_system_ila_2_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_system_ila_2_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_system_ila_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_tx_fifo_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_tx_fifo_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_tx_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_util_vector_logic1_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_util_vector_logic1_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_util_vector_logic1_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1114]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_0_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1117]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_1_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_1_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_1_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_1_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1120]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_vio_2_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_vio_2_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_vio_2_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconcat_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconcat_0_0/synth/qsfp2_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -207,16 +212,16 @@ INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__par
 INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconstant_1_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_1_0/synth/qsfp2_xlconstant_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'qsfp2_xlconstant_2_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_2_0/synth/qsfp2_xlconstant_2_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'qsfp2_xlconstant_2_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_xlconstant_2_0/synth/qsfp2_xlconstant_2_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-32028-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_zynq_ultra_ps_e_0_0' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/.Xil/Vivado-22560-DESKTOP-AP6UC59/realtime/qsfp2_zynq_ultra_ps_e_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'qsfp2_zynq_ultra_ps_e_0_0' has 125 connections declared, but only 118 given [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1134]
 INFO: [Synth 8-6155] done synthesizing module 'qsfp2' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:416]
-INFO: [Synth 8-6155] done synthesizing module 'qsfp2_wrapper' (0#1) [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp2_wrapper' (0#1) [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:13]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cmac_usplus_0'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:838]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1114]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_ps8_0_99M'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1037]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_1'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1117]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'qsfp2_i'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:49]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'qsfp2_i'. This will prevent further optimization [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/hdl/qsfp2_wrapper.v:49]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_2'. This will prevent further optimization [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/synth/qsfp2.v:1120]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -320,18 +325,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3208.859 ; gain = 458.691
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3213.109 ; gain = 459.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3226.777 ; gain = 476.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3231.008 ; gain = 477.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3226.777 ; gain = 476.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3231.008 ; gain = 477.348
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 3226.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 3231.008 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -376,34 +381,36 @@ Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2
 Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_vio_2_0/qsfp2_vio_2_0/qsfp2_vio_2_0_in_context.xdc] for cell 'qsfp2_i/vio_2'
 Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'qsfp2_i/zynq_ultra_ps_e_0'
 Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0/qsfp2_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'qsfp2_i/zynq_ultra_ps_e_0'
-Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:8]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:9]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:10]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:11]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:12]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:13]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:14]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:16]
-WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:17]
-WARNING: [Vivado 12-507] No nets matched '*qsfp1_intl_1*'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:18]
-WARNING: [Vivado 12-507] No nets matched '*qsp1_modprsl_1*'. [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:19]
-Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc].
+Parsing XDC File [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:17]
+WARNING: [Vivado 12-507] No nets matched '*qsfp1_intl_1*'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:18]
+WARNING: [Vivado 12-507] No nets matched '*qsp1_modprsl_1*'. [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc:19]
+Finished Parsing XDC File [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/qsfp2_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/qsfp2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3268.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3272.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3268.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3272.371 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3272.371 ; gain = 518.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -411,7 +418,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3272.371 ; gain = 518.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -479,10 +486,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconstant_1. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/xlconstant_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for qsfp2_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3272.371 ; gain = 518.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3268.113 ; gain = 517.945
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3272.371 ; gain = 518.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -505,25 +512,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3268.113 ; gain = 517.945
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3272.371 ; gain = 518.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3656.785 ; gain = 906.617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3658.242 ; gain = 904.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3658.598 ; gain = 908.430
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3659.938 ; gain = 906.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3670.395 ; gain = 920.227
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3671.727 ; gain = 918.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -541,37 +548,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -629,27 +636,27 @@ Report Cell Usage:
 |22    |OBUF                     |     3|
 +------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3684.195 ; gain = 892.691
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3684.195 ; gain = 934.027
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 3685.383 ; gain = 890.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3685.383 ; gain = 931.723
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 3696.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 3697.477 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3748.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3749.930 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
 
 Synth Design complete | Checksum: 31b3d9de
 INFO: [Common 17-83] Releasing license: Synthesis
-97 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
+103 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 3748.754 ; gain = 2103.605
-INFO: [Common 17-1381] The checkpoint 'e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/qsfp2_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 3749.930 ; gain = 2089.121
+INFO: [Common 17-1381] The checkpoint 'E:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.runs/synth_1/qsfp2_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file qsfp2_wrapper_utilization_synth.rpt -pb qsfp2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 13:38:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 15:31:53 2024...

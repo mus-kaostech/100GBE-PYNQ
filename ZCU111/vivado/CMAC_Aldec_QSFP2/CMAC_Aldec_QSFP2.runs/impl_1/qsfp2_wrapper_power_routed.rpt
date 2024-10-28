@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Oct 28 13:52:27 2024
+| Date             : Mon Oct 28 15:44:37 2024
 | Host             : DESKTOP-AP6UC59 running 64-bit major release  (build 9200)
 | Command          : report_power -file qsfp2_wrapper_power_routed.rpt -pb qsfp2_wrapper_power_summary_routed.pb -rpx qsfp2_wrapper_power_routed.rpx
 | Design           : qsfp2_wrapper

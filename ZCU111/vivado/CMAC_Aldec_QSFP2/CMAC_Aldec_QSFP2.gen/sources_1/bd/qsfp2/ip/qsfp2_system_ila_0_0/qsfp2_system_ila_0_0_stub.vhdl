@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Oct 28 13:37:25 2024
+-- Date        : Mon Oct 28 13:37:21 2024
 -- Host        : DESKTOP-AP6UC59 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               e:/KaOs_Tech/GitHub/100GBE-PYNQ/ZCU111/vivado/CMAC_Aldec_QSFP2/CMAC_Aldec_QSFP2.gen/sources_1/bd/qsfp2/ip/qsfp2_system_ila_0_0/qsfp2_system_ila_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top qsfp2_system_ila_0_0 -prefix
+--               qsfp2_system_ila_0_0_ qsfp2_system_ila_0_0_stub.vhdl
 -- Design      : qsfp2_system_ila_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu28dr-ffvg1517-2-e

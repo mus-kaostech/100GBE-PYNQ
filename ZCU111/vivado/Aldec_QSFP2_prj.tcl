@@ -12,7 +12,7 @@ set _xil_proj_name_ "CMAC_Aldec_QSFP2"
 
 # Set project properties
  set obj [current_project]
- set_property -name "board_part" -value "xilinx.com:zcu111:part0:1.2" -objects $obj
+ set_property -name "board_part" -value "xilinx.com:zcu111:part0:1.4" -objects $obj
 
 # Build block design
 source ${origin_dir}/qsfp2_bd.tcl

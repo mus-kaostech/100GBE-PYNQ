@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Oct 28 12:26:18 2024
+# Process ID: 27396
+# Current directory: E:/KaOs_Tech/GitHub/100GBE-PYNQ/synth_board_test
+# Command line: vivado.exe -mode tcl
+# Log file: E:/KaOs_Tech/GitHub/100GBE-PYNQ/synth_board_test/vivado.log
+# Journal file: E:/KaOs_Tech/GitHub/100GBE-PYNQ/synth_board_test\vivado.jou
+# Running On: DESKTOP-AP6UC59, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 16, Host memory: 68388 MB
+#-----------------------------------------------------------
+pwd
+make ../.Makefile
+ls
+ls
+pwd
+ls -al
+cd ..
+ls
+make
+?
+help make
+make
